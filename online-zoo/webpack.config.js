@@ -12,8 +12,14 @@ const stylesHandler = isProduction
   : "style-loader";
 
 const config = {
-  entry: "./src/index.js",
+  // entry: "./src/index.js",
+  devtool: 'source-map',
+  entry: {
+    index: './src/pages/main/script.js',
+    donate: './src/pages/donate/script.js'
+  },
   output: {
+    filename: '[name].[hash:20].js',
     path: path.resolve(__dirname, "dist"),
   },
   devServer: {
@@ -21,9 +27,25 @@ const config = {
     host: "localhost",
   },
   plugins: [
+    // new HtmlWebpackPlugin({
+    //   template: "index.html",
+    // }),
     new HtmlWebpackPlugin({
-      template: "index.html",
+      template: './src/pages/main/index.html',
+      inject: true,
+      chunks: ['index'],
+      filename: 'index.html'
     }),
+    new HtmlWebpackPlugin({
+        template: './src/pages/donate/index.html',
+        inject: true,
+        chunks: ['donate'],
+        filename: 'donate.html'
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].[contenthash].css",
+      chunkFilename: "[id].[contenthash].css"
+    })
 
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/

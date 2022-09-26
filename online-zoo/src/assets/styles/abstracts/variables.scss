@@ -1,0 +1,31 @@
+$green-color: #4B9200;
+$orange: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+$orange_color: #E47209;
+$yellow_color: #FFEE2E;
+$orange_gradient: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+$pink_gradient: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+$red_color: #D31414;
+$black_blue_color: #333B41;
+$gray_color: #767474;
+$gray_smoky_color: #ABABAB;
+$gray_light_color: #F1F3F2;
+$frosted_glass_white_color: rgba(253, 253, 255, 0.52);
+
+$main-color: $orange;
+$main-color-dark: $orange_color;
+$second-color: $green-color;
+$text-color: #000000;
+$text-color-dark: #545454;
+$mistake-color: $red_color;
+$disable-color: $gray_color;
+
+$mobile: 375px;
+$tablet: 520px;
+$desc: 1024px;
+
+$main-font: Roboto, 'Times New Roman', Times, serif;
+$second-font: Arial, Helvetica, sans-serif;
+
+$max-laptop: 1279px;
+$max-tablet: 767px;
+$max-mobile: 319px;

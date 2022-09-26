@@ -1,0 +1,55 @@
+@mixin flex (
+    $dir: row,
+    $wr: nowrap,
+    $jus: center,
+    $ai: center
+) {
+    display: flex;
+    flex-direction: $dir;
+    flex-wrap: $wr;
+    justify-content: $jus;
+    align-content: $ai;
+    align-items: $ai;
+}
+
+@mixin text-font (
+    $fam: $second-font,
+    $st: normal,
+    $wei: 400,
+    $size: 15px,
+    $line: 160%,
+    $space: 0,
+) {
+    font-family: $fam;
+    font-style: $st;
+    font-weight: $wei;
+    font-size: $size;
+    line-height: $line;
+    letter-spacing: $space;
+}
+
+@mixin head-font (
+    $fam: $main-font,
+    $st: normal,
+    $wei: 400,
+    $size: 44px,
+    $line: 130%,
+    $space: 0,
+) {
+    font-family: $fam;
+    font-style: $st;
+    font-weight: $wei;
+    font-size: $size;
+    line-height: $line;
+    letter-spacing: $space;
+}
+
+@mixin bg-img (
+    $position: center,
+    $x: 28px,
+    $y: $x
+) {
+    background-position: $position;
+    background-repeat: no-repeat;
+    background-size: $x $y;
+}
