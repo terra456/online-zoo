@@ -8,3 +8,28 @@
 @import "./components/lincs.scss";
 @import "./components/input.scss";
 @import "./components/list.scss";
+
+@import "./layout/section.scss";
+@import "./layout/header.scss";
+@import "./layout/logo.scss";
+@import "./layout/navigation.scss";
+@import "./layout/head.scss";
+@import "./layout/backstage.scss";
+@import "./layout/slider.scss";
+@import "./layout/card.scss";
+@import "./layout/friend.scss";
+
+html {
+    font-family: 'Roboto';
+    font-size: 10px;
+}
+
+.exist {
+    background-image: url(../../assets/images/Rectangle0.png);
+    background-image: url(../../assets/images/Rectangle1.png);
+    background-image: url(../../assets/images/Rectangle2.png);
+    background-image: url(../../assets/images/Rectangle3.png);
+    background-image: url(../../assets/images/Rectangle4.png);
+    background-image: url(../../assets/images/Rectangle5.png);
+    background-image: url(../../assets/icons/logo.svg);
+}

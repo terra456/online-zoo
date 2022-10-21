@@ -1,0 +1,15 @@
+.header {
+    & > .section__wrapper {        
+        padding: 14px 0;
+        @include flex($jus: space-between);
+        gap: 63px;
+    }
+
+    &__navigation {
+        flex-grow: 2;
+    }
+
+    &__copyright {
+        font-size: 1.6rem;
+    }
+}

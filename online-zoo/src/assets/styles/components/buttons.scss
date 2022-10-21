@@ -1,0 +1,65 @@
+.btn__img {
+    width: 52px;
+    height: 52px;
+    border: 2px solid $second-color;
+    border-radius: 26px;
+    color: #202020;
+    background-color: transparent;
+    @include bg-img();
+
+    &:hover {
+        cursor: pointer;
+        background-color: $second-color;
+        border: 2px solid $second-color;
+    }
+
+    &--active,
+    &:active {
+        background-color: $second-color;
+        border: 2px solid $second-color;
+    }
+
+    &--inactive {
+        color: #CDCDCD;
+        background-color: transparent;
+        border: 2px solid #CDCDCD;
+
+        &:hover,
+        &:focus {
+            cursor: auto;
+            color: #CDCDCD;
+            background-color: transparent;
+            border: 2px solid #CDCDCD;
+        }
+    }
+
+    
+}
+
+.btn__text {
+    width: 298px;
+    height: 54px;
+    padding: 16px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: $main-color;
+    border: none;
+    border-radius: 100px;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        background: $main-color-dark;
+    }
+
+    &:active,
+    &--active {
+        background: $second-color;
+    }
+
+    &:disabled {
+        background: $gray_color;
+    }
+}

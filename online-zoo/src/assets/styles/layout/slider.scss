@@ -1,0 +1,38 @@
+.slider {
+    @include flex();
+    position: relative;
+    margin-bottom: 80px;
+
+    &__cards {
+        @include flex($wr: wrap, $jus: space-between);
+        width: 100%;
+        gap: 20px;
+    }
+
+    & .btn__arrow {
+        position: absolute;
+        width: 63px;
+        height: 63px;
+        border: none;
+        border-radius: 50%;
+        background: $orange;
+
+        &:hover,
+        &:focus {
+            background: none;
+            background-color: $orange_color;
+        }
+        
+        &--prev {
+            left: -82px;
+        }
+
+        &--next {
+            right: -82px;
+
+            & > img {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

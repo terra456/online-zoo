@@ -1,0 +1,58 @@
+.card {
+    position: relative;
+    width: 31.5%;
+    border-radius: 5px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 5px;
+        border: 2px solid transparent;
+        background: $orange border-box;
+        -webkit-mask:
+            linear-gradient(#fff 0 0) padding-box, 
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+    }
+
+    & > img {
+        width: 100%;
+        border-radius: 5px 5px 0 0px;
+    }
+
+    &__desc {
+        padding: 9px 14px 11px 14px;
+        @include flex($jus: space-between);
+    }
+
+    &__head {
+        margin: 0;
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    &__icon {
+        width: 48px;
+        height: 38px;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &--meat {
+            background-size: auto;
+            background-image: url(../../assets/icons/meet-fish_icon.svg);
+        }
+
+        &--banana {
+            background-image: url(../../assets/icons/banana-bamboo_icon.svg);
+        }
+    }
+}

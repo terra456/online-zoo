@@ -1,0 +1,31 @@
+.navigation {
+
+    &__list {
+        @include flex($jus: flex-start);
+        gap: 58px;
+    }
+
+    &__item--copy {
+        margin-left: auto;
+    }
+
+    &__link {
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-decoration: none;
+        color: #ffffff;
+        
+        &:visited {
+            color: #ffffff;
+        }
+
+        &__link--active,
+        &:hover,
+        &:active {
+            color: $main-color-dark;
+            background: $orange;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
