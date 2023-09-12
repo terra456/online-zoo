@@ -1,0 +1,1 @@
+{"version":3,"file":"index.71d1a5497b98e8602f82.js","mappings":"mBAIAA,QAAQC,IAAI,K","sources":["webpack://my-webpack-project/./src/pages/main/script.js"],"sourcesContent":["import 'normalize.css/normalize.css';\n\nimport './style.scss';\n\nconsole.log('th');"],"names":["console","log"],"sourceRoot":""}
